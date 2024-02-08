@@ -1,0 +1,70 @@
+/* App.css */
+
+.App {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 1%;
+
+}
+
+.Header {
+  background-color: #222;
+}
+
+.HeaderImage {
+  width: 100%;
+  max-width: 100%;
+}
+
+.Content {
+  background-color: black;
+  padding-top: .5%; /* Add padding to separate the logo from the header image */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Logo {
+  margin-top: .5%; /* Add margin to space the logo from the content above */
+  max-width: 5%;
+  margin-left: 2%;
+}
+
+.Logo img {
+  max-width: 100%; /* Adjust the width of the logo as needed */
+  height: auto;
+}
+
+#custom-substack-embed {
+  /* Apply styles to the widget container */
+  margin-left: auto; /* Push it to the right */
+  padding-right: 2%;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  .App {
+    text-align: center;
+    background-color: black;
+    padding-bottom: 0;
+
+  }
+
+  .HeaderImage {
+    content: url('mobile-header.png'); /* Specify mobile-specific header image source */
+  }
+
+  .Logo {
+    margin-left: 10px; /* Adjust margin for mobile */
+  }
+
+  .Logo img {
+    display: none;
+  }
+
+  #custom-substack-embed {
+    /* Apply styles to the widget container */
+    margin: 0 auto;
+    padding: 2%;
+  }
+}
